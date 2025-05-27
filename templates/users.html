@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Usuários Cadastrados</title>
 </head>
 <body>
-$END$
+    <h1>Lista de Usuários</h1>
+
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/register">Voltar para o cadastro</a>
 </body>
 </html>

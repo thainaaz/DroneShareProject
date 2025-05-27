@@ -1,4 +1,5 @@
-# users.py
+from flask import redirect, url_for
+
 users = []
 
 def add_user(username, password):
